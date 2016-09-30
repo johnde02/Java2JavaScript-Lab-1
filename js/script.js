@@ -95,3 +95,18 @@ function tableSquare() {
   }
   display.innerHTML = output;
 }
+
+function tableSquares() {
+  var m = prompt("what number would you like to use?");
+  var output = "";
+  var spacer = "|";
+  for(var i = 1; i <= m; i++) {
+    for(var j = 1; j <= m; j++) {
+      output += spacer + (i*j);
+      if(j%m == 0) {
+        output += spacer + "<br>";
+      }
+    }
+  }
+  display.innerHTML = output;
+}
